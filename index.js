@@ -14,18 +14,18 @@ let saveEl = document.getElementById("save-el");
 
 welcomeEl.innerText = myName+ " " + message;
 
-welcomeEl.innerText = welcomeEl.innerText + "👋";
+welcomeEl.innerText = welcomeEl.innerText;
 
 
 
 
 function increment() {
     count++;
-    countEl.textContent = count;
+    countEl.innerText = count;
 }
 
 function save() {
-    saveEl.textContent = saveEl.innerText + count + " " +" - ";
+    saveEl.innerText = saveEl.innerText + count +"- ";
     count = 0;
     console.log(count);
 }
