@@ -26,6 +26,7 @@ function increment() {
 
 function save() {
     saveEl.innerText = saveEl.innerText + count +"- ";
+    countEl.innerText = 0;
     count = 0;
     console.log(count);
 }
